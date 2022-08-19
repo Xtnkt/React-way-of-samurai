@@ -1,6 +1,6 @@
 .app-wrapper {
   display: grid;
-  width: 1200px;
+  width: 1519px;
   margin: 0 auto;
   grid-template-areas:
     "h h"
@@ -10,27 +10,3 @@
   grid-template-columns: 2fr 10fr;
 }
 
-
-
-.header {
-  grid-area: h;
-  background-color: rgb(10, 181, 223);
-}
-
-.header img {
-  width: 50px;
-}
-
-.nav {
-  grid-area: n;
-  background-color: rgba(201, 233, 241, 0.866);
-}
-
-.content {
-  grid-area: c;
-}
-
-.content img {
-  max-width: 1000px;
-  height: 400px;
-}
