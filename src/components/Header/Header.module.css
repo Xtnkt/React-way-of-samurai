@@ -4,5 +4,9 @@
   }
   
   .header img {
+    display:block;
+    margin:left;
     width: 60px;
   }
+
+  

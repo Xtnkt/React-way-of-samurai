@@ -1,16 +1,18 @@
 import React from 'react';
 import classes from './Post.module.css';
 
-const Post = () => {
+const Post = (props) => {
     return (
         <div className={classes.item} >
-            <img src='https://clipartart.com/images/angler-fish-clipart-13.png' />
-            post
+            <img src={props.img} />
+            {props.message}
             <div>
-                <button>like</button>
+                <button>
+                    {props.likesCount}
+                </button>
+                <button>likes</button>
             </div>
         </div>
-    )   
+    )
 }
-
 export default Post;
