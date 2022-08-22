@@ -1,12 +1,21 @@
 .header {
     grid-area: h;
     background-color: rgb(10, 181, 223);
+    display:grid;
+    grid-template-columns: 2fr 10fr;
   }
   
   .header img {
     display:block;
     margin:left;
     width: 60px;
+   
+  }
+  .siteName {
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    color: gold;
   }
 
   

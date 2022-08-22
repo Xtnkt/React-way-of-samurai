@@ -11,5 +11,10 @@
 }
 
 .app-wrapper-content {
-    grid-area: c;
+    grid-area: c;   
+}
+
+.app-wrapper-content img {
+    max-width: 1266px;
+    height: auto;
 }
