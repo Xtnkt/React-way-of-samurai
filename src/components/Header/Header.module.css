@@ -1,6 +1,6 @@
 .header {
     grid-area: h;
-    background-color: rgb(10, 181, 223);
+    background-color: rgba(6, 127, 247, 0.848);
     display:grid;
     grid-template-columns: 2fr 10fr;
   }
@@ -15,7 +15,7 @@
     text-align: center;
     padding: 15px;
     font-size: 20px;
-    color: gold;
+    color: white;
   }
 
   

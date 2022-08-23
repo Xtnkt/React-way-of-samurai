@@ -1,6 +1,6 @@
 .nav {
   grid-area: n;
-  background-color: rgba(101, 81, 114, 0.866);
+  background-color: rgba(198, 141, 54, 0.979);
   padding: 20px;
 }
 
@@ -10,6 +10,6 @@
 }
 
 .active {
-  color: gold;
+  color: rgba(0, 80, 156, 0.534);
   text-decoration: none;
 }
