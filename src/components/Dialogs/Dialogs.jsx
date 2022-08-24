@@ -4,21 +4,32 @@ import { NavLink } from 'react-router-dom';
 
 
 const Dialogs = (props) => {
+    let dialogsData = [
+        { id: 1, name: 'Vlad' },
+        { id: 2, name: 'Sanya' },
+        { id: 3, name: 'Masha' },
+        { id: 4, name: 'Roma' },
+        { id: 5, name: 'Kate' }
+    ]
+
+    let messageData = [
+        { id: 1, message: 'Hi' },
+        { id: 2, message: 'Have a nice day' },
+        { id: 3, message: 'When will I see you?' },
+        { id: 4, message: 'Omg' },
+        { id: 5, message: 'Dimych)' }
+    ]
+
+    let dialogsDataElement = dialogsData.map( d => <DialogItem name={d.name} id={d.id} /> );
+    let messageDataElement = messageData.map( m => <Message message={m.message} id={m.id} /> );
+
     return (
         <div className={classes.dialogs}>
             <div className={classes.dialogsItems}>
-                <DialogItem name="Vlad" id="1" />
-                <DialogItem name="Sanya" id="2" />
-                <DialogItem name="Masha" id="3" />
-                <DialogItem name="Roma" id="4" />
-                <DialogItem name="Kate" id="5" />
+                { dialogsDataElement }
             </div>
             <div className={classes.messages}>
-               <Message message = "Hi!" />
-               <Message message = "Have a nice day" />
-               <Message message = "When will I see you? " />
-               <Message message = "Omg" />
-               <Message message = "Dimych)" />
+                {messageDataElement}
             </div>
         </div>
     )
@@ -39,3 +50,4 @@ const Message = (props) => {
         <div className={classes.message}>{props.message}</div>
     )
 }
+
