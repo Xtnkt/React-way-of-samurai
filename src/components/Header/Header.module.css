@@ -1,21 +1,23 @@
 .header {
     grid-area: h;
     background-color: rgba(6, 127, 247, 0.848);
-    display:grid;
+    display: grid;
     grid-template-columns: 2fr 10fr;
-  }
-  
-  .header img {
-    display:block;
-    margin:left;
-    width: 60px;
-   
-  }
-  .siteName {
+}
+
+.header img {
+    display: block;
+    margin: 5px;
+    margin-left: 30px;
+    width: 70px;
+
+}
+
+.siteName {
     text-align: center;
     padding: 15px;
     font-size: 20px;
     color: white;
-  }
+}
 
   

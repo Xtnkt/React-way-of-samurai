@@ -5,9 +5,9 @@ import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Profile = (props) => {
     return (
-        <div >
-            <ProfileInfo />
-            <MyPosts />
+        <div>
+            <ProfileInfo/>
+            <MyPosts postsData={props.postsData}/>
         </div>
     )
 }
